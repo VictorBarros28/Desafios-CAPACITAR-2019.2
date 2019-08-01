@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <meta 8-utf>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Site </title>
+    <style>
+       .caixa{
+           border: 5px solid black;
+           width: 500px;
+           height:500px;
+       }
+    </style>
+</head>
+
+<body>
+
+    <button class="botao1" id="botao1" onclick="avermelha()">
+        Vermelho
+    </button>
+
+    <button class="botao2" id="botao2" onclick="esverdeia()">
+        Verde
+    </button>
+
+    <button class="botao3" id="botao3" onclick="azula()">
+        Azul
+    </button>
+
+
+    <div class="caixa" id="caixa">
+
+
+    </div>
+
+    <script>
+    function avermelha(){
+document.getElementById("caixa").style.backgroundColor = "#ff0000";
+    }
+
+    function esverdeia(){
+document.getElementById("caixa").style.backgroundColor = "#008000";
+    }
+    function azula(){
+        document.getElementById("caixa").style.backgroundColor = "#0000ff";
+    }
+    </script>
+
+
+
+
+</body>
+
+</html>

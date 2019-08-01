@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta 8-utf>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> Calcular Produto </title>
+    <style>
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="formu">
+        <form>
+            Primeiro Numero <br>
+
+            <input class="inp1" id="produto01" type="number" name="produto1"><br>
+
+            Segundo Numero: <br>
+
+            <input class="inp2" id="produto02" type="number" name="produto2">
+
+        </form><br>
+
+        <button class="ok" id="confirmar" onclick= "calcula()">
+            Calcular produto
+        </button>
+    </div>
+
+    <a class="resultado" id="caixa">
+
+    </a>
+
+    <script>
+        function calcula(){
+            var n1 = document.getElementById("produto01").value;
+            var n2 = document.getElementById("produto02").value;
+            if(Number.isInteger(n1) && Number.isInteger (n2)){
+            document.getElementById("caixa").textContent = n1 * n2;}
+        }
+    </script>
+</body>
